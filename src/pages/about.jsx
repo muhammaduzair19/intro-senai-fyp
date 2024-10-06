@@ -36,16 +36,16 @@ const About = () => {
     return (
         <section>
             <Element name="about">
-                <div className="container relative mx-auto bg-white max-md:mt-12 md:mt-8 pb-6">
-                    <div className="w-full max-w-7xl h-full px-4 sm:px-0 mx-auto">
-                        <div className="w-full grid grid-cols-2 md:grid-cols-4">
+                <div className="w-full  relative bg-white max-md:mt-12 md:mt-8 py-6 px-5 sm:px-8">
+                    <div className="w-full max-w-7xl h-full mx-auto">
+                        <div className="w-full grid grid-cols-1 md:grid-cols-4 gap-10">
                             {countups?.map(({ id, title, start, end, letter }) => (
-                                <div className="flex flex-col items-center mt-12" key={id}>
-                                    <p className="text-6xl font-bold text-p  text-center flex items-center">
+                                <div className="flex flex-col items-center mt-8" key={id}>
+                                    <p className="text-7xl sm:text-6xl font-bold text-p  text-center flex items-center">
                                         <CountUp start={start} end={end} duration={1} preserveValue enableScrollSpy />{" "}
                                         {letter && letter}
                                     </p>
-                                    <p className="font-semibold text-pt text-sm ">{title}</p>
+                                    <p className="font-semibold text-pt text-base ">{title}</p>
                                 </div>
                             ))}
                         </div>

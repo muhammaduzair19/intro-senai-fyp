@@ -1,20 +1,11 @@
 import { Element } from "react-scroll";
 
 const Home = () => {
-
-
-
-
-
-
-
-
-
     return (
         <section>
             <Element name="home">
-                <div className="container relative mx-auto">
-                    <div className="w-full max-w-7xl h-full px-4 sm:px-0 mx-auto">
+                <div className="container relative mx-auto w-full bg-white max-md:mt-5 md:mt-2 py-2 px-5 sm:px-8">
+                    <div className="w-full max-w-7xl h-full mx-auto">
                         <div className="flex w-full h-full justify-between items-center">
                             <div className=" w-full h-full sm:w-1/2 mt-16">
                                 <div className="flex flex-col space-y-8">
