@@ -4,10 +4,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        p: "#FF685B",
-        pt: "#252B42",
+        p: "#16a34a",
+        pt: "#eeeee",
         st: "#737373",
-        d: "#E74040",
+        d: "#125e09",
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],

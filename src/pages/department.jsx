@@ -5,7 +5,7 @@ const Department = () => {
     return (
         <section>
             <Element name="department">
-                <div className="w-full  relative bg-blue-200 max-md:mt-12 md:mt-8 py-6 px-5 sm:px-8">
+                <div className="w-full  relative bg-green-50 max-md:mt-12 md:mt-8 py-6 px-5 sm:px-8">
                     <div className="w-full max-w-7xl h-full mx-auto">
                         <div className="flex flex-col my-10 md:my-20 space-y-10 md:space-y-16">
                             <div className="flex flex-col gap-2">
