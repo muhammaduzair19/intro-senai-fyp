@@ -13,7 +13,6 @@ const Navbar = () => {
         } else {
             document.body.classList.remove("overflow-hidden");
         }
-        // Cleanup when component unmounts or when `showNav` changes
         return () => {
             document.body.classList.remove("overflow-hidden");
         };
@@ -31,7 +30,13 @@ const Navbar = () => {
                                     key={index}
                                     className="text-base capitalize font-bold tracking-widest text-gray-600 hover:text-p/90 cursor-pointer"
                                 >
-                                    <Link to={menu} smooth spy offset={-100} activeClass>
+                                    <Link
+                                        to={menu}
+                                        smooth
+                                        spy
+                                        offset={-100}
+                                        activeClass
+                                    >
                                         {menu}
                                     </Link>
                                 </li>
@@ -60,11 +65,16 @@ const Navbar = () => {
                         <div
                             className={clsx(
                                 "flex flex-col p-5",
-                                showNav ? "-translate-x-0 flex" : "-translate-x-full hidden"
+                                showNav
+                                    ? "-translate-x-0 flex"
+                                    : "-translate-x-full hidden"
                             )}
                         >
                             <div className="self-end">
-                                <button onClick={() => setShowNav(false)} className={clsx("z-20")}>
+                                <button
+                                    onClick={() => setShowNav(false)}
+                                    className={clsx("z-20")}
+                                >
                                     <X size={20} strokeWidth={1.5} />
                                 </button>
                             </div>
@@ -73,9 +83,21 @@ const Navbar = () => {
                                     {menuLinks?.map((menu, index) => (
                                         <li
                                             key={index}
-                                            className="text-2xl uppercase font-bold tracking-widest text-white hover:text-p/90 cursor-pointer"
+                                            className="text-2xl uppercase font-bold tracking-widest text-white hover:text-black/35 cursor-pointer"
                                         >
-                                            <Link to={menu} smooth spy offset={-100} activeClass>
+                                            <Link
+                                                to={menu}
+                                                onClick={() => {
+                                                    setTimeout(
+                                                        () => setShowNav(false),
+                                                        800
+                                                    );
+                                                }}
+                                                smooth
+                                                spy
+                                                offset={-100}
+                                                activeClass
+                                            >
                                                 {menu}
                                             </Link>
                                         </li>
