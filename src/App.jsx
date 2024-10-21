@@ -1,24 +1,30 @@
-import Home from "./pages/home";
-import Navbar from "./components/navbar";
-import CardSection from "./pages/card-section";
-import About from "./pages/about";
-import Department from "./pages/department";
-import Team from "./pages/team";
-import Newsletter from "./pages/newletter";
-import Footer from "./components/footer";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Layout from "./layout/layout.jsx";
+import LandingPage from "./pages/landing-page.jsx";
+import WordScramble from "./pages/word-scramble.jsx";
+import GameLayout from "./layout/game-layout.jsx";
 
 const App = () => {
     return (
-        <main className="overflow-hidden bg-white w-full min-h-screen font-poppins">
-            <Navbar />
-            <Home />
-            <CardSection />
-            <About />
-            <Department />
-            <Team />
-            <Newsletter />
-            <Footer />
-        </main>
+        <BrowserRouter>
+            <Routes>
+                {/* <Route path="/*" element={<LandingPage />} /> */}
+                <Route path="/" element={<Layout />}>
+                    <Route path="/" index element={<LandingPage />} />
+                </Route>
+                <Route
+                    path="/"
+                    element={
+                        <GameLayout
+                            currentGame={"WordScramble"}
+                            title={"Word"}
+                        />
+                    }
+                >
+                    <Route path="/game/:gameName" element={<WordScramble />} />
+                </Route>
+            </Routes>
+        </BrowserRouter>
     );
 };
 

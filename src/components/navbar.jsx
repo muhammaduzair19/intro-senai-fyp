@@ -5,7 +5,7 @@ import { Link } from "react-scroll";
 
 const Navbar = () => {
     const [showNav, setShowNav] = useState(false);
-    const menuLinks = ["home", "about", "blogs", "department", "advise"];
+    const menuLinks = ["home", "about", "blogs", "games"];
 
     useEffect(() => {
         if (showNav) {
@@ -22,7 +22,9 @@ const Navbar = () => {
         <nav>
             <div className="w-full bg-white fixed top-0 left-0 z-20 ">
                 <div className="flex justify-between items-center px-5 py-4 mx-auto max-w-7xl">
-                    <div className="text-xl font-bold">LOGO</div>
+                    <div className="text-xl font-bold w-10">
+                        <img src="/images/logo2.svg" alt="" />
+                    </div>
                     <div className="items-center hidden md:flex">
                         <ul className="flex gap-5">
                             {menuLinks?.map((menu, index) => (
