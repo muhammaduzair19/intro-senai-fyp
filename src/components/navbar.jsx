@@ -5,7 +5,19 @@ import { Link } from "react-scroll";
 
 const Navbar = () => {
     const [showNav, setShowNav] = useState(false);
+    const [isScrolled, setIsScrolled] = useState(false);
     const menuLinks = ["home", "about", "blogs", "games"];
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setIsScrolled(window.scrollY > 10);
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
 
     useEffect(() => {
         if (showNav) {
@@ -20,14 +32,22 @@ const Navbar = () => {
 
     return (
         <nav>
-            <div className="w-full bg-white fixed top-0 left-0 z-20 ">
+            <div
+                className={clsx(
+                    "w-full fixed top-0 left-0 z-20 transition-all duration-300",
+                    {
+                        "bg-white/10 backdrop-blur-lg shadow-lg": isScrolled,
+                        "bg-transparent": !isScrolled,
+                    }
+                )}
+            >
                 <div className="flex justify-between items-center px-5 py-4 mx-auto max-w-7xl">
                     <div className="text-xl font-bold w-10">
-                        <img src="/images/logo2.svg" alt="" />
+                        <img src="/images/logo2.svg" alt="Logo" />
                     </div>
                     <div className="items-center hidden md:flex">
                         <ul className="flex gap-5">
-                            {menuLinks?.map((menu, index) => (
+                            {menuLinks.map((menu, index) => (
                                 <li
                                     key={index}
                                     className="text-base capitalize font-bold tracking-widest text-gray-600 hover:text-p/90 cursor-pointer"
@@ -54,13 +74,13 @@ const Navbar = () => {
                         </button>
                     </div>
                     <div className="block md:hidden ">
-                        <button onClick={() => setShowNav(true)} className={""}>
+                        <button onClick={() => setShowNav(true)} className="">
                             <AlignJustify size={20} strokeWidth={1.5} />
                         </button>
                     </div>
                     <div
                         className={clsx(
-                            "absolute bg-p  left-0 h-screen overflow-hidden  top-0 bottom-0 right-0 transition-all duration-500",
+                            "absolute bg-p left-0 h-screen overflow-hidden top-0 bottom-0 right-0 transition-all duration-500",
                             showNav ? "w-2/3 " : "w-0"
                         )}
                     >
@@ -82,7 +102,7 @@ const Navbar = () => {
                             </div>
                             <div>
                                 <ul className="flex flex-col gap-5 ">
-                                    {menuLinks?.map((menu, index) => (
+                                    {menuLinks.map((menu, index) => (
                                         <li
                                             key={index}
                                             className="text-2xl uppercase font-bold tracking-widest text-white hover:text-black/35 cursor-pointer"

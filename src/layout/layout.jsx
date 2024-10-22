@@ -1,15 +1,14 @@
+// src/layouts/Layout.jsx
 import React from "react";
-import Footer from "../components/footer";
-import Navbar from "../components/navbar";
-import LandingPage from "../pages/landing-page";
+import Footer from "../components/footer"; // Ensure correct casing
+import Navbar from "../components/navbar"; // Ensure correct casing
 import { Outlet } from "react-router-dom";
 
-const Layout = ({ children }) => {
+const Layout = () => {
     return (
         <main className="overflow-hidden bg-white w-full min-h-screen font-poppins">
             <Navbar />
-            <Outlet />
-            {/* <LandingPage /> */}
+            <Outlet /> {/* This renders the matched child routes */}
             <Footer />
         </main>
     );
