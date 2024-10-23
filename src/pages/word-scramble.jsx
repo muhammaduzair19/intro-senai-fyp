@@ -72,8 +72,8 @@ const WordScramble = () => {
     };
 
     return (
-        <main className="w-full h-screen flex justify-center items-center bg-green-50">
-            <div className="max-w-md mx-auto p-6 bg-green-100 rounded-lg shadow-md">
+        <main className="w-full p-4 flex justify-center items-center">
+            <div className="max-w-md mx-auto p-6 bg-green-200 rounded-lg shadow-md">
                 <h2 className="text-2xl font-bold text-green-800 mb-4">
                     Word Scramble Challenge
                 </h2>

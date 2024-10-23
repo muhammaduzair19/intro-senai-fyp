@@ -4,12 +4,19 @@ import { Carousel } from "react-responsive-carousel";
 import { ArrowBigLeft, ArrowBigRight } from "lucide-react";
 
 const sliderItems = [
-    { imageLink: "/images/1.png", text: "Discover the Beauty" },
-    { imageLink: "/images/2.png", text: "Explore the World" },
-    { imageLink: "/images/3.png", text: "Find Your Passion" },
-    { imageLink: "/images/4.png", text: "Embrace Adventure" },
-    { imageLink: "/images/5.png", text: "Live the Dream" },
-    { imageLink: "/images/6.png", text: "Experience Life" },
+    { imageLink: "/images/1.png", text: "Learn More" },
+    { imageLink: "/images/2.png", text: "Get Help" },
+    { imageLink: "/images/3.png", text: "Track Changes" },
+    { imageLink: "/images/4.png", text: "Stay Balanced" },
+    { imageLink: "/images/5.png", text: "Stay Connected" },
+    { imageLink: "/images/6.png", text: "Boost Focus" },
+    { imageLink: "/images/7.png", text: "Healthy Habits" },
+    { imageLink: "/images/8.png", text: "Stay Positive" },
+    { imageLink: "/images/9.png", text: "Feel Better" },
+    { imageLink: "/images/10.png", text: "Find Passion" },
+    { imageLink: "/images/11.png", text: "Seek Support" },
+    { imageLink: "/images/12.png", text: "Get Help" },
+    { imageLink: "/images/13.png", text: "Get Advice" },
 ];
 
 const Slider = () => {

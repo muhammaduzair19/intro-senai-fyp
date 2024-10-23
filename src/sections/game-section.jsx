@@ -20,15 +20,15 @@ const GameSection = () => {
                 "Pop bubbles as they float up. Improve your focus and reaction time in this fast-paced game!",
             icon: Zap,
             link: "/game/bubble-pop",
-            image: "/images/bubble-pop.jpg",
+            image: "/images/bubble-pop.png",
         },
         {
             title: "Memory Card Match",
             description:
                 "Match pairs of cards to test and enhance your memory. A classic game with a mental wellness twist!",
             icon: Puzzle,
-            link: "/game/memory-match",
-            image: "/images/memory-match.jpg",
+            link: "/game/memory-game",
+            image: "/images/memory-game.png",
         },
     ];
 
