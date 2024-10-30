@@ -106,12 +106,9 @@ const Navbar = () => {
                                         >
                                             <Link
                                                 to={menu}
-                                                onClick={() => {
-                                                    setTimeout(
-                                                        () => setShowNav(false),
-                                                        800
-                                                    );
-                                                }}
+                                                onClick={() =>
+                                                    setShowNav(false)
+                                                }
                                                 smooth
                                                 spy
                                                 offset={-100}
@@ -123,8 +120,8 @@ const Navbar = () => {
                                     ))}
                                 </ul>
                                 <div className="mt-8 flex gap-5">
-                                    <button className="flex items-center gap-1 bg-p px-5 py-2 rounded-full text-white font-medium border-[1px] border-p hover:bg-transparent hover:text-p transition-colors duration-500 ">
-                                        <a href="">Get Started</a>
+                                    <button className="flex items-center gap-1 bg-white  px-5 py-2 rounded-full text-p font-medium border-[1px] border-p hover:bg-transparent hover:text-p transition-colors duration-500 ">
+                                        <a href="/">Get Started</a>
                                     </button>
                                 </div>
                             </div>

@@ -12,8 +12,8 @@ const LandingPage = () => {
             <Home />
             <CardSection />
             <About />
-            <GameSection />
             <Blogs />
+            <GameSection />
             <Newsletter />
         </>
     );

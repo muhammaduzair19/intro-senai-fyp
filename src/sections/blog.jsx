@@ -36,7 +36,7 @@ const Blogs = () => {
     return (
         <section>
             <Element name="blogs">
-                <div className="w-full relative bg-gradient-to-b from-white to-gray-50 max-md:mt-12 md:mt-8 py-12 px-5 sm:px-8">
+                <div className="w-full relative bg-gradient-to-b from-white to-gray-100 max-md:mt-12 md:mt-8 py-12 px-5 sm:px-8">
                     <div className="w-full max-w-7xl h-full mx-auto">
                         <div className="flex flex-col gap-10">
                             <div className="flex flex-col gap-2 text-center md:text-left">
