@@ -6,7 +6,6 @@ import Slider from "./slider";
 const Home = () => {
     const [scrollY, setScrollY] = useState(0);
 
-    // Parallax effect for image
     useEffect(() => {
         const handleScroll = () => {
             setScrollY(window.scrollY);
@@ -65,8 +64,9 @@ const Home = () => {
 
                                 {/* Call to Action Button */}
                                 <div className="mt-8 flex gap-4 items-center">
+                                   
                                     <motion.button
-                                        className="flex items-center gap-1 bg-green-600 px-4 py-3 rounded-md text-white font-semibold border-[1px] border-green-600 hover:bg-transparent hover:text-green-600 transition-all duration-500"
+                                        className="flex items-center gap-1 bg-green-600 px-5 py-2 rounded-full text-white font-medium border-[1px] border-green-600 hover:bg-transparent hover:text-green-600 transition-all duration-500"
                                         whileHover={{ scale: 1.05 }}
                                         whileTap={{ scale: 0.95 }}
                                     >

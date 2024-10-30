@@ -34,7 +34,7 @@ const Navbar = () => {
         <nav>
             <div
                 className={clsx(
-                    "w-full fixed top-0 left-0 z-20 transition-all duration-300",
+                    "w-full fixed top-0 left-0 transition-all duration-300 z-30",
                     {
                         "bg-white/10 backdrop-blur-lg shadow-lg": isScrolled,
                         "bg-transparent": !isScrolled,
@@ -42,8 +42,8 @@ const Navbar = () => {
                 )}
             >
                 <div className="flex justify-between items-center px-5 py-4 mx-auto max-w-7xl">
-                    <div className="text-xl font-bold w-10">
-                        <img src="/images/logo2.svg" alt="Logo" />
+                    <div className="text-xl font-bold w-16">
+                        <img src="/images/logo.png" alt="Logo" />
                     </div>
                     <div className="items-center hidden md:flex">
                         <ul className="flex gap-5">
@@ -66,11 +66,8 @@ const Navbar = () => {
                         </ul>
                     </div>
                     <div className="hidden md:flex gap-5 ">
-                        <button className="font-bold text-p px-3 py-2 hover:bg-p hover:text-white rounded-md transition-colors duration-500">
-                            <a href="">Login</a>
-                        </button>
-                        <button className="flex items-center gap-1 bg-p px-3 py-2 rounded-md text-white font-bold border-[1px] border-p hover:bg-transparent hover:text-p transition-colors duration-500">
-                            <a href="">Signup</a>
+                        <button className="flex items-center gap-1 bg-p px-5 py-2 rounded-full text-white font-medium border-[1px] border-p hover:bg-transparent hover:text-p transition-colors duration-500 ">
+                            <a href="">Get Started</a>
                         </button>
                     </div>
                     <div className="block md:hidden ">
@@ -126,11 +123,8 @@ const Navbar = () => {
                                     ))}
                                 </ul>
                                 <div className="mt-8 flex gap-5">
-                                    <button className="font-bold text-white bg-transparent px-4 py-2 hover:bg-white hover:text-p rounded-md transition-colors duration-500">
-                                        <a href="">Login</a>
-                                    </button>
-                                    <button className="flex items-center gap-2 bg-white px-4 py-2 rounded-md text-p font-bold border-[1px] border-white hover:bg-transparent hover:text-white transition-colors duration-500">
-                                        <a href="">Signup</a>
+                                    <button className="flex items-center gap-1 bg-p px-5 py-2 rounded-full text-white font-medium border-[1px] border-p hover:bg-transparent hover:text-p transition-colors duration-500 ">
+                                        <a href="">Get Started</a>
                                     </button>
                                 </div>
                             </div>
