@@ -1,5 +1,5 @@
 import React from "react";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; 
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import { ArrowBigLeft, ArrowBigRight } from "lucide-react";
 
@@ -91,15 +91,14 @@ const Slider = () => {
                             <img
                                 src={item.imageLink}
                                 alt={item.text}
-                                className="relative w-full h-80 object-cover  rounded-xl transition-transform duration-500 ease-in-out group-hover:scale-105"
+                                className="relative w-full h-[400px/2]  md:h-80 object-cover  rounded-xl transition-transform duration-500 ease-in-out group-hover:scale-105"
                             />
-                            <div className="absolute inset-0 border-4 rounded-xl border-transparent group-hover:border-gradient-to-r from-purple-500 via-pink-500 to-red-500 transition-all duration-500"></div>
                             <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                             <div className="absolute inset-0 flex items-center justify-center flex-col text-white text-center p-6">
-                                <h2 className="text-3xl sm:text-5xl font-bold mb-4 drop-shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500 animate-floating">
+                                <h2 className="text-xl sm:text-3xl md:text-5xl font-bold mb-4 drop-shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500 animate-floating">
                                     {item.text}
                                 </h2>
-                                <button className="mt-4 px-6 py-2 text-lg bg-gradient-to-r from-green-400 via-blue-500 to-purple-600 hover:bg-gradient-to-l rounded-full shadow-lg opacity-0 group-hover:opacity-100 transition-all duration-500 animate-floating">
+                                <button className="mt-4 px-3 py-1 sm:py-1.5 sm:px-4 md:py-2 md:px-6 text-base sm:text-lg bg-gradient-to-r from-green-400 via-blue-500 to-purple-600 hover:bg-gradient-to-l rounded-full shadow-lg opacity-0 group-hover:opacity-100 transition-all duration-500 animate-floating">
                                     Explore More
                                 </button>
                             </div>

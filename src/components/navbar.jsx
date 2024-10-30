@@ -6,7 +6,7 @@ import { Link } from "react-scroll";
 const Navbar = () => {
     const [showNav, setShowNav] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
-    const menuLinks = ["home", "about", "blogs", "games"];
+    const menuLinks = ["home", "about", "games", "blogs"];
 
     useEffect(() => {
         const handleScroll = () => {
