@@ -10,10 +10,8 @@ const MemoryGame = () => {
     const [won, setWon] = useState(false);
 
     const handleGridSize = (e) => {
-        console.log(e);
 
         const size = parseInt(e.target.value);
-        console.log(size);
 
         if (size >= 2 && size <= 10) setGridSize(size);
     };
