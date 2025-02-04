@@ -68,7 +68,7 @@ const Navbar = () => {
                     <div className="hidden md:flex gap-5 ">
                         <button className="flex items-center gap-1 bg-p px-5 py-2 rounded-full text-white font-medium border-[1px] border-p hover:bg-transparent hover:text-p transition-colors duration-500 ">
                             <a
-                                href="https://senai-dashboard.vercel.app/"
+                                href="https://dashboard.senai.space/"
                                 target="_blank"
                             >
                                 Get Started
@@ -127,7 +127,7 @@ const Navbar = () => {
                                 <div className="mt-8 flex gap-5">
                                     <button className="flex items-center gap-1 bg-white  px-5 py-2 rounded-full text-p font-medium border-[1px] border-p hover:bg-transparent hover:text-p transition-colors duration-500 ">
                                         <a
-                                            href="https://senai-dashboard.vercel.app/"
+                                            href="https://dashboard.senai.space/"
                                             target="_blank"
                                         >
                                             Get Started
