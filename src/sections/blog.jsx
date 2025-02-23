@@ -94,9 +94,9 @@ const BlogsCard = ({ ...blog }) => (
                 <p>{blog.date}</p>|<p>{blog.readTime}</p>
             </span>
             <p className="text-xs font-medium">{blog.author}</p>
-            <button className="w-full bg-green-500 hover:bg-white font-medium px-6 rounded py-1 mt-5 transition-colors duration-300 text-white hover:text-green-500">
+            <a href="https://dashboard.senai.space/blogs" target="_blank" className="w-full text-center bg-green-500 hover:bg-white font-medium px-6 rounded py-1 mt-5 transition-colors duration-300 text-white hover:text-green-500">
                 Read more
-            </button>
+            </a>
         </div>
     </motion.div>
 );
